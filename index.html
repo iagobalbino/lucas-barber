@@ -1,17 +1,272 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;800&display=swap" rel="stylesheet">
-  <title>Lucas Barber</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucas Barber | O corte perfeito. Toda vez.</title>
+  <meta name="description" content="Lucas Barber Barbearia na Vila Madalena, São Paulo. Corte clássico, fade degradê, barba completa e muito mais.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">LUCAS<span>BARBER</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <i class="bi bi-list fs-3 text-gold"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 py-3 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#trabalhos">Trabalhos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-gold btn-sm py-2 px-3" href="#agendar">Agendar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <p class="eyebrow mb-3">Barbearia Urbana · Vila Madalena</p>
+          <h1 class="font-display mb-4">O corte<br><span class="text-gold">perfeito.</span><br>Toda vez.</h1>
+          <p class="lead mb-4">Precisão, estilo e respeito pelo seu tempo. Na Lucas Barber, cada corte é executado com técnica afiada.</p>
+          <div class="d-grid d-sm-flex gap-3 mb-4">
+            <a href="#agendar" class="btn btn-gold">Agendar agora <i class="bi bi-chevron-right ms-1"></i></a>
+            <a href="#servicos" class="btn btn-outline-bh">Ver serviços</a>
+          </div>
+          <div class="hours-pill"><i class="bi bi-clock text-gold"></i> Seg – Sáb: 09h às 20h</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section-pad">
+      <div class="container">
+        <p class="eyebrow mb-3">01 — Serviços</p>
+        <h2 class="section-title font-display mb-3">O que<br>fazemos</h2>
+        <p class="text-muted-bh mb-5" style="max-width:480px">Cada serviço é executado com ferramentas premium e anos de prática nas ruas da cidade.</p>
+
+        <div class="row g-3 g-lg-4">
+          <div class="col-md-6 col-lg-3">
+            <a href="#agendar" class="text-decoration-none text-reset d-block h-100">
+              <article class="service-card">
+                <span class="service-num">01</span>
+                <h3 class="font-display">Corte Clássico</h3>
+                <p>Tesoura e navalha, acabamento perfeito.</p>
+                <div class="service-price"><strong>R$ 50</strong><i class="bi bi-arrow-up-right"></i></div>
+              </article>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <a href="#agendar" class="text-decoration-none text-reset d-block h-100">
+              <article class="service-card">
+                <span class="service-num">02</span>
+                <h3 class="font-display">Fade Degradê</h3>
+                <p>Máquina zero ao infinito, transição precisa.</p>
+                <div class="service-price"><strong>R$ 60</strong><i class="bi bi-arrow-up-right"></i></div>
+              </article>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <a href="#agendar" class="text-decoration-none text-reset d-block h-100">
+              <article class="service-card">
+                <span class="service-num">03</span>
+                <h3 class="font-display">Barba Completa</h3>
+                <p>Toalha quente, navalha, hidratação.</p>
+                <div class="service-price"><strong>R$ 45</strong><i class="bi bi-arrow-up-right"></i></div>
+              </article>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <a href="#agendar" class="text-decoration-none text-reset d-block h-100">
+              <article class="service-card">
+                <span class="service-num">04</span>
+                <h3 class="font-display">Corte + Barba</h3>
+                <p>O pacote completo, do topo ao queixo.</p>
+                <div class="service-price"><strong>R$ 95</strong><i class="bi bi-arrow-up-right"></i></div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="bg-surface">
+      <div class="row g-0 align-items-stretch">
+        <div class="col-lg-6 order-lg-2">
+          <div class="about-img" role="img" aria-label="Barbeiro realizando um corte de cabelo">
+            <div class="about-badge"><strong>6+</strong><small>Anos de experiência</small></div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1 d-flex align-items-center">
+          <div class="section-pad px-4 px-lg-5 w-100" style="max-width:640px; margin-left:auto">
+            <p class="eyebrow mb-3">02 — Sobre nós</p>
+            <h2 class="section-title font-display mb-4">Arte<br>nas mãos</h2>
+            <p class="text-muted-bh">A Lucas Barber nasceu da rua. Fundada em 2020 no subúrbio carioca, nossa barbearia foi construída sobre respeito ao ofício clássico e visão contemporânea do estilo urbano.</p>
+            <p class="text-muted-bh mb-5">Especialista em fades, cortes clássicos e acabamentos de barba — com olho crítico para detalhes que fazem toda a diferença.</p>
+            <div class="d-flex gap-5">
+              <div class="stat"><strong>1000+</strong><small>Clientes atendidos</small></div>
+              <!-- <div class="stat"><strong>4.9<i class="bi bi-star-fill text-gold fs-6 ms-1"></i></strong><small>Avaliação no Google</small></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRABALHOS -->
+    <section id="trabalhos" class="section-pad">
+      <div class="container">
+        <p class="eyebrow mb-3">03 — Trabalhos</p>
+        <h2 class="section-title font-display mb-5">Nossos<br>cortes</h2>
+        <div class="row g-2 g-lg-3">
+          <div class="col-6 col-lg-3">
+            <div class="gallery-item" style="background-image:url('img/trabalho-1.jpg')" role="img" aria-label="Trabalho 1"></div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="gallery-item" style="background-image:url('img/trabalho-2.jpg')" role="img" aria-label="Trabalho 2"></div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="gallery-item" style="background-image:url('img/trabalho-3.jpg')" role="img" aria-label="Trabalho 3"></div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="gallery-item" style="background-image:url('img/trabalho-4.jpg')" role="img" aria-label="Trabalho 4"></div>
+          </div>
+        </div>
+        <a href="https://www.instagram.com/prof_lucasbarberrj/" target="_blank" class="link-insta d-inline-flex align-items-center gap-2 mt-4"><i class="bi bi-instagram"></i> Ver mais no Instagram</a>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="section-pad bg-surface">
+      <div class="container">
+        <p class="eyebrow mb-3">04 — Depoimentos</p>
+        <h2 class="section-title font-display mb-5">O que<br>dizem</h2>
+        <div class="row g-3 g-lg-4">
+          <div class="col-lg-4">
+            <figure class="testimonial mb-0">
+              <div class="quote-mark">“</div>
+              <p>Melhor fade da cidade, sem discussão. Saio de lá me sentindo outro cara.</p>
+              <footer><strong>Rafael M.</strong><small>Cliente há 3 anos</small></footer>
+            </figure>
+          </div>
+          <div class="col-lg-4">
+            <figure class="testimonial mb-0">
+              <div class="quote-mark">“</div>
+              <p>Atendimento top, ambiente raiz, preço justo. Não vou em outro lugar.</p>
+              <footer><strong>Bruno S.</strong><small>Cliente há 1 ano</small></footer>
+            </figure>
+          </div>
+          <div class="col-lg-4">
+            <figure class="testimonial mb-0">
+              <div class="quote-mark">“</div>
+              <p>Cada detalhe é feito com cuidado. A barba ficou afiada e o corte perfeito.</p>
+              <footer><strong>Thiago L.</strong><small>Cliente há 2 anos</small></footer>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section id="agendar" class="section-pad">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <p class="eyebrow mb-3">05 — Agendamento</p>
+            <h2 class="section-title font-display mb-3">Marque<br>seu corte</h2>
+            <p class="text-muted-bh mb-4" style="max-width:420px">Preencha o formulário e entraremos em contato para confirmar sua vaga. Simples assim.</p>
+            <ul class="list-unstyled contact-list mb-0">
+              <li><i class="bi bi-clock"></i> Seg – Sáb: 09h às 20h</li>
+              <li><i class="bi bi-geo-alt"></i> R. xxxxxxxxxx, 272 — xxxxxxxxxxxx, Rio de Janeiro/RJ</li>
+              <li><i class="bi bi-telephone"></i> 21 99910-8898</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            <form class="booking-form needs-validation" id="formAgendamento" novalidate>
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome completo</label>
+                <input type="text" class="form-control" id="nome" placeholder="João da Silva" required>
+                <div class="invalid-feedback">Informe seu nome.</div>
+              </div>
+              <div class="mb-3">
+                <label for="whatsapp" class="form-label">WhatsApp</label>
+                <input type="tel" class="form-control" id="whatsapp" placeholder="(11) 99999-9999" required>
+                <div class="invalid-feedback">Informe seu WhatsApp.</div>
+              </div>
+              <div class="mb-3">
+                <label for="servico" class="form-label">Serviço</label>
+                <select class="form-select" id="servico" required>
+                  <option value="" selected disabled>Selecione um serviço</option>
+                  <option>Corte Clássico — R$ 50</option>
+                  <option>Fade Degradê — R$ 60</option>
+                  <option>Barba Completa — R$ 45</option>
+                  <option>Corte + Barba — R$ 95</option>
+                </select>
+                <div class="invalid-feedback">Escolha um serviço.</div>
+              </div>
+              <div class="mb-4">
+                <label for="data" class="form-label">Data preferida</label>
+                <input type="date" class="form-control" id="data" required>
+                <div class="invalid-feedback">Escolha uma data.</div>
+              </div>
+              <button type="submit" class="btn btn-gold w-100">Confirmar agendamento</button>
+              <div id="msgSucesso" class="alert alert-success mt-3 mb-0 d-none" role="alert">
+                Solicitação enviada! Entraremos em contato pelo WhatsApp para confirmar.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-5">
+          <div class="brand mb-2">LUCAS<span>BARBER</span></div>
+          <p class="text-muted-bh small mb-0">R. xxxxxxxxxx, 272 — xxxxxxxxxxxx, Rio de Janeiro/RJ</p>
+        </div>
+        <div class="col-lg-4">
+          <nav class="footer-links d-flex flex-wrap gap-4">
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#trabalhos">Trabalhos</a>
+            <a href="#depoimentos">Depoimentos</a>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="social d-flex gap-4 justify-content-lg-end">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram me-1"></i></a>
+            <a href="#"><i class="bi bi-whatsapp me-1"></i> WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="copy">© 2026 Lucas Barber Barbearia. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
